@@ -6,7 +6,6 @@ export const getEmails = createAsyncThunk(
     try {
       const res = await fetch("https://flipkart-email-mock.vercel.app/");
       const data = await res.json();
-      console.log(data.list);
       if (res.status === 200) {
         return data.list;
       }
