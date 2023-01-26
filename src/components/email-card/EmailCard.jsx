@@ -3,11 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import parse from "html-react-parser";
 import { Avatar } from "../avatar/Avatar";
 import { setFavMailIds } from "../../redux-store";
-// import {
-//   setFavMailIds,
-//   setReadedMail,
-//   setMails,
-// } from "../../redux-store/slice/emailSlice";
 
 const EmailCard = () => {
   const { singleEmailDetails, selectedEmail, favMailIds } = useSelector(

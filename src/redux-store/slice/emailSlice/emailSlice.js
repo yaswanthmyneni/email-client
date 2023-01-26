@@ -8,23 +8,12 @@ const initialState = {
   selectedEmail: null,
   favMailIds: [],
   filter: null,
-  // email: null,
 };
 
 export const emailSlice = createSlice({
   name: "email",
   initialState,
   reducers: {
-    // setEmail: (state, action) => {
-    //   state.email = action.payload;
-    // },
-    // setReadedMail: (state, action) => {
-    //   if (Array.isArray(action.payload)) {
-    //     state.readedMails = [...action.payload];
-    //   } else {
-    //     state.readedMails = [...state.readedMails, action.payload];
-    //   }
-    // },
     setFilter: (state, action) => {
       state.filter = action.payload;
     },
